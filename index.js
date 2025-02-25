@@ -15,7 +15,7 @@ const app = express();
 const port = 3000
 
 app.use(cors({
-  origin: "https://app-repos.vercel.app/", // Cambia esto según el puerto del frontend
+  origin: "https://app-repos.vercel.app", // Cambia esto según el puerto del frontend
   credentials: true // Permite enviar cookies y autenticación
 }));
 
