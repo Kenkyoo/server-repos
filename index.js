@@ -15,14 +15,14 @@ const app = express();
 const port = 3000
 
 app.use(cors({
-  origin: "http://localhost:5173", // Cambia esto según el puerto del frontend
+  origin: "https://app-repos.vercel.app/", // Cambia esto según el puerto del frontend
   credentials: true // Permite enviar cookies y autenticación
 }));
 
 const config = {
   authRequired: false,
   auth0Logout: true,
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://server-repos.onrender.com',
   clientID: process.env.AUTH0_CLIENT_ID,
   issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL,
   secret: process.env.SESSION_SECRET,
